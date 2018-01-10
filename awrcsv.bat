@@ -9,15 +9,15 @@ if not exist csv\c6-IO-Segment-activity  mkdir csv\c6-IO-Segment-activity
 if not exist csv\c7-Oracle-memory        mkdir csv\c7-Oracle-memory 
 if not exist csv\c8-RAC                  mkdir csv\c8-RAC
 if not exist csv\c9-Perf-report          mkdir csv\c9-Perf-report 
-.\awrcsv.pl -I -C 1 -d AWR -o csv\c1-Basic               -p AWR -s txt
-.\awrcsv.pl -I -C 2 -d AWR -o csv\c2-Host                -p AWR -s txt
-.\awrcsv.pl -I -C 3 -d AWR -o csv\c3-Stats-Events        -p AWR -s txt
-.\awrcsv.pl -I -C 4 -d AWR -o csv\c4-SQL                 -p AWR -s txt
-.\awrcsv.pl -I -C 5 -d AWR -o csv\c5-Buffers-Enq-Latches -p AWR -s txt
-.\awrcsv.pl -I -C 6 -d AWR -o csv\c6-IO-Segment-activity -p AWR -s txt
-.\awrcsv.pl -I -C 7 -d AWR -o csv\c7-Oracle-memory       -p AWR -s txt
-REM .\awrcsv.pl -I -C 8 -d AWR -o csv\c8-RAC                 -p AWR -s txt
-REM .\awrcsv.pl -I -C 9 -d AWR -o csv\c9-Perf-report         -p AWR -s txt
+perl awrcsv.pl -I -C 1 -d AWR -o csv\c1-Basic               -p sp -s lst
+perl awrcsv.pl -I -C 2 -d AWR -o csv\c2-Host                -p sp -s lst
+perl awrcsv.pl -I -C 3 -d AWR -o csv\c3-Stats-Events        -p sp -s lst
+perl awrcsv.pl -I -C 4 -d AWR -o csv\c4-SQL                 -p sp -s lst
+perl awrcsv.pl -I -C 5 -d AWR -o csv\c5-Buffers-Enq-Latches -p sp -s lst
+perl awrcsv.pl -I -C 6 -d AWR -o csv\c6-IO-Segment-activity -p sp -s lst
+perl awrcsv.pl -I -C 7 -d AWR -o csv\c7-Oracle-memory       -p sp -s lst
+perl awrcsv.pl -I -C 8 -d AWR -o csv\c8-RAC                 -p sp -s lst
+perl awrcsv.pl -I -C 9 -d AWR -o csv\c9-Perf-report         -p sp -s lst
 echo.
 echo INFORMATION:
 echo.

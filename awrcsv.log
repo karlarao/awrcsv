@@ -1,0 +1,29 @@
+Mon Jan 08 12:14:45 2018: awrcsv.pl: Vers: 1.14
+
+Mon Jan 08 12:14:45 2018: awrcsv.pl: Started
+
+Scanning 8 AWR / STATSPACK reports...
+Category 9 meta-data selected. The following meta-data filters will be applied:
+
+Report_Library_Cache_Activity.mta
+Global_Cache_and_Enqueue_Services.mta
+Report_OS_CPU_Load_Stats.mta
+Report_Redo_Activity.mta
+Report_Session_Stats.mta
+Global_Cache_Efficiency_Percentages.mta
+Time_Model_Stats.mta
+Report_Top_5_Timed_Events.mta
+Report_Buffer_Cache.mta
+Report_Undo_TS_Summary.mta
+Report_TX_Throughput.mta
+Report_Table_IO_Methods.mta
+Report_Sort_PGA_Analysis.mta
+Report_Parsing.mta
+Report_Table_IO.mta
+Report_Reads_Writes_Per_Sec.mta
+Report_Tspace_IO_Stats.mta
+
+Mon Jan 08 12:14:45 2018: awrcsv.pl: Done
+
+
+INFO: Log "awrcsv.log" copied to "csv\c9-Perf-report"
