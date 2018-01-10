@@ -1,3 +1,8 @@
+
+Karl's Fork
+===========
+This is my working version of this tool on Windows VM  
+
 AWRCSV 1.12
 ===========
 Description
@@ -56,8 +61,8 @@ When you create a graph you can then in Excel generate a standard line graph and
 then use it via:  Design > Change Chart Type > Templates > <Template Name>.
 
 To quote Andy:
-"It’s just got a graduated background and thinner plot lines than the default, but makes 
-it look like it’s been created with a pen and not a chubby wax crayon. J".
+"Itâ€™s just got a graduated background and thinner plot lines than the default, but makes 
+it look like itâ€™s been created with a pen and not a chubby wax crayon. J".
 
 Thanks for the contribution Andy.
 
