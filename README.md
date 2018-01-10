@@ -1,7 +1,12 @@
 
 Karl's Fork
 ===========
-This is my working version of this tool on Windows VM  
+This is my working version of this tool on Windows VM. To use just do the following: 
+
+- Stage files on AWR folder
+- Edit the awrcsv.bat accordingly 
+- On the windows command prompt execute awrcsv.bat
+
 
 AWRCSV 1.12
 ===========
