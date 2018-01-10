@@ -7,6 +7,40 @@ This is my working version of this tool on Windows VM. To use just do the follow
 - Edit the awrcsv.bat accordingly 
 - On the windows command prompt execute awrcsv.bat
 - Use the csv data on CSV folder
+- Example usage: 
+	
+Grep top 5 timed events 
+
+		$ cat ./c1-Basic/KADM_top_5_timed_events-pct_ela_time.csv | awk -F ',' '{print $1,$2}'
+		Top 5 Timed Events [%Total Ela Time] sp_79364_79375.lst
+		Event Name 29-Nov-17 14:00:01
+		CPU time                                     52.30
+		db file sequential read                      0
+		wait for unread message on broadcast channel 3.19
+		latch free                                   26.26
+		db file scattered read                       0
+		library cache pin                            4.18
+		SQL*Net message from dblink                  4.28
+		kksfbc child completion                      0
+		sbtwrite2                                    0
+
+Grep load profile
+
+		$ cat ./c1-Basic/KADM_load_profile-per_sec.csv | awk -F ',' '{print $1,$2}' | grep -v "Per Sec" | grep -v "Metric" | sort -nk2
+		Block changes               2743.58
+		Hard parses                 462.45
+		Logical reads               632183.37
+		Physical reads              2650.81
+		Physical writes             159.90
+		Redo size                   549269.50
+		User calls                  1872.64
+		Logons                      1.52
+		Sorts                       20.23
+		Transactions                80.03
+		Parses                      5009.09
+		Executes                    5109.91
+
+
 
 
 AWRCSV 1.12
