@@ -6,6 +6,7 @@ This is my working version of this tool on Windows VM. To use just do the follow
 - Stage files on AWR folder
 - Edit the awrcsv.bat accordingly 
 - On the windows command prompt execute awrcsv.bat
+- Use the csv data on CSV folder
 
 
 AWRCSV 1.12
